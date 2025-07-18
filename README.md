@@ -20,7 +20,7 @@ Then copy the `api.js` file into your project directory.
 ```js
 import Api from "./api.js";
 
-const api = new Api("http://localhost:3000/api");
+const api = new Api("https://pingi.msaebi.ir/api");
 
 async function main() {
   const user = await api.getUser(123456);
