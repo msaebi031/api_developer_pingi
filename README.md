@@ -48,7 +48,7 @@ Fetches user data by Telegram ID.
 
 | Parameter | Type   | Description      |
 | --------- | ------ | ---------------- |
-| id        | String | Telegram user ID |
+| id        | Int | Telegram user ID |
 
 **Returns:** Response containing user data.
 
@@ -60,7 +60,7 @@ Updates user information.
 
 | Parameter | Type   | Description                          |
 | --------- | ------ | ------------------------------------ |
-| id        | String | Telegram user ID                     |
+| id        | Int | Telegram user ID                     |
 | data      | Object | Fields to update (e.g. `{name: ""}`) |
 
 **Returns:** Success or error message from the server.
@@ -73,10 +73,10 @@ Creates a new server for a specific user.
 
 | Field       | Type   | Description                        |
 | ----------- | ------ | ---------------------------------- |
-| telegram_id | String | Telegram user ID                   |
-| vps_uuid    | String | VPS UUID (must be in valid format) |
-| vps_id      | String | VPS ID                             |
-| vps_id_uniq | String | Unique VPS ID                      |
+| telegram_id | Int | Telegram user ID                   |
+| vps_uuid    | Uuid | VPS UUID (must be in valid format) |
+| vps_id      | Int | VPS ID                             |
+| vps_id_uniq | Int | Unique VPS ID                      |
 
 **Returns:** Result of the server creation process.
 
